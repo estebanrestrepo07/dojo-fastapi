@@ -4,7 +4,7 @@ from routes import book_routes
 
 app = FastAPI()
 
-#app.include_router(book_routes.route)
+app.include_router(book_routes.route)
 
 @app.get('/')
 def home():
